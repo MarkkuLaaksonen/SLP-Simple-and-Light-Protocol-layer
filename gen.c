@@ -44,7 +44,7 @@ int GenCertainSyncRelatedMsgQueuesEmpty(void)
     int count;
 
     for (count = 1; count <= 3; count++) {
-        if (!GenIsThisMsgQueueEmpty(SLP_APP_DATA_MSG_QUEUE_KEY_ID)) {
+        if (!GenIsThisMsgQueueEmpty(SLP_INNER_APP_DATA_MSG_QUEUE_KEY_ID)) {
             return 0;
         }
         if (!GenIsThisMsgQueueEmpty(SLP_POLL_MSG_QUEUE_KEY_ID)) {
