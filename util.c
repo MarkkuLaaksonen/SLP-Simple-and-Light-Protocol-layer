@@ -15,7 +15,7 @@ This can be ported easily to other Operating System environments, also into embe
 */
 
 #include "common.h"
-#include "util.h"
+#include "util_if.h"
 
 int binarySearch(uint64_t arr[], int low, int high, uint64_t key)
 {
